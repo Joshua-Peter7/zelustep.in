@@ -52,6 +52,16 @@ app.use('/api/finance', financeRoutes);
 app.use('/api/settings', settingsRoutes);
 app.use('/api/admin', adminRoutes);
 
+// Root Welcome / Status endpoint
+app.get('/', (req, res) => {
+  res.json({
+    status: 'healthy',
+    service: 'Zelustep API Backend',
+    version: '1.0.0',
+    documentation: '/api/health'
+  });
+});
+
 // Health check endpoint
 app.get('/api/health', (req, res) => {
   res.json({
