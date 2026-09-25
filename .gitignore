@@ -1,0 +1,25 @@
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database & Local Backups
+backend/data/*.json
+!backend/data/.gitkeep
+
+# Build outputs
+frontend/dist/
+dist/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
