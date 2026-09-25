@@ -118,6 +118,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
                 onChange={(e) => setEmail(e.target.value)}
                 className="input-field"
                 id="auth-email"
+                autoComplete="username"
               />
             </div>
           </div>
@@ -134,6 +135,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
                 onChange={(e) => setPassword(e.target.value)}
                 className="input-field"
                 id="auth-password"
+                autoComplete={isRegister ? "new-password" : "current-password"}
               />
             </div>
           </div>

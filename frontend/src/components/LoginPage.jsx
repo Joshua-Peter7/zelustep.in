@@ -74,6 +74,7 @@ export default function LoginPage({ onLoginSuccess }) {
                   onChange={(e) => setEmail(e.target.value)}
                   className="input-field"
                   id="login-email-input"
+                  autoComplete="username"
                   autoFocus
                 />
               </div>
@@ -91,6 +92,7 @@ export default function LoginPage({ onLoginSuccess }) {
                   onChange={(e) => setPassword(e.target.value)}
                   className="input-field"
                   id="login-password-input"
+                  autoComplete="current-password"
                 />
               </div>
             </div>
